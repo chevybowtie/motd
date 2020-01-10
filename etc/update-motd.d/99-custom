@@ -1,0 +1,22 @@
+!/bin/sh
+
+#
+# installs required
+#
+# stop all current scripts from running
+#
+# $ sudo chmod -x /etc/update-motd.d/*
+# ...
+# $ sudo apt install inxi screenfetch ansiweather
+#
+
+echo "GENERAL SYSTEM INFORMATION"
+/usr/bin/screenfetch
+
+echo
+echo "SYSTEM DISK USAGE"
+export TERM=xterm; inxi -D
+
+echo
+echo "CURRENT WEATHER AT THE LOCATION"
+ansiweather -l Arlington,Texas -u imperial
