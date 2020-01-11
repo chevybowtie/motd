@@ -54,6 +54,11 @@ export PS1="\[\e[36m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[35m\]\h\[\e[m\] \[\e[32m
 
 
 # nice dashboard
+# $ sudo apt install toilet
+# ...
+# $ sudo apt install figlet
+# ...
+
 #!/bin/bash
 
 # NAME: now
